@@ -5,6 +5,7 @@ import {BsFiles, BsMicFill }from 'react-icons/bs'
 import {AiOutlineAppstore} from 'react-icons/ai'
 import {MdDownloading} from 'react-icons/md'
 import {GiLightningFrequency} from 'react-icons/gi'
+import MiniPlayer from '../MiniPlayer/index';
 const Sidebar = () => {
 	return(
 		<>
@@ -22,6 +23,7 @@ const Sidebar = () => {
 				</div>
 				{/* Footer section  */}
 				<div>
+					<MiniPlayer/>
 				</div>
 			</div>
 		
