@@ -9,12 +9,12 @@ import MiniPlayer from '../MiniPlayer/index';
 const Sidebar = () => {
 	return(
 		<>
-			<div className="w-[280px] bg-[#1B1C33] h-screen pl-8">
-				<div className="flex gap-3 text-[1.5em] text-bold py-8 text-white">
+			<div className="w-[280px] bg-[#1B1C33] h-screen  flex flex-col flex-[0.2]">
+				<div className="flex gap-3 text-[1.5em] text-bold py-6 pl-8 text-white">
 					<GiLightningFrequency color="#8878B8"/> Podcaster
 				</div>
 				{/* middle section  */}
-				<div>
+				<div className="pl-8">
 					<SidebarItems name="Home" icon={<CgHome color="" />}/>
 					<SidebarItems name="Latest Episodes" icon={<BsMicFill/>}/>
 					<SidebarItems name="Saved" icon={<BsFiles/>}/>
@@ -22,7 +22,7 @@ const Sidebar = () => {
 					<SidebarItems name="Downloads" icon={<MdDownloading/>}/>
 				</div>
 				{/* Footer section  */}
-				<div>
+				<div className="mt-auto mb-6">
 					<MiniPlayer/>
 				</div>
 			</div>
