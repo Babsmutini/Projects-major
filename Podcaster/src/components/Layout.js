@@ -1,14 +1,12 @@
 import React from "react";
-
+import Frame from "./Frame";
 import "./Layout.css";
-import { useSelector } from 'react-redux';
 import Sidebar from "./Sidebar";
 const Layout = () => {
-
-
   return (
-    <div>
+    <div className="flex">
       <Sidebar/>
+      <Frame/>
     </div>
   );
 };
