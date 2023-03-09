@@ -4,6 +4,7 @@ import {IoLogoReact} from 'react-icons/io5'
 import {BiBriefcase} from 'react-icons/bi'
 import {GiPorcelainVase} from 'react-icons/gi'
 import {GiAngelWings} from 'react-icons/gi'
+import './styles.css'
 
 const Categories = () => {
   return (
@@ -12,7 +13,7 @@ const Categories = () => {
 		<div>
 			<h1 className="text-[1.5em] text-white">Top categories</h1>
 		</div>
-		<div className='flex gap-4 overflow-x-scroll my-4 w-full'>
+		<div className='category_item flex gap-4 overflow-x-scroll my-4 w-full'>
 			<CategoryItem icon={<IoLogoReact/>} text="Technology"/>
 			<CategoryItem icon={<GiPorcelainVase/>} text="Society and culture"/>
 			<CategoryItem icon={<BiBriefcase/>} text="Business"/>
