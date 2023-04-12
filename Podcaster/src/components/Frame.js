@@ -1,13 +1,16 @@
 import React from 'react'
-import Categories from './Categories'
-import Recommended from './Recommended'
 import Topbar from './Topbar'
+import { Outlet } from 'react-router';
+
+
+
 const Frame = () => {
   return (
-	<div className=' flex-[0.8] flex flex-col p-8 bg-[#08072A] overflow-x-hidden'>
+	<div className='flex flex-col p-8 bg-[#08072A] w-full  overflow-x-hidden '>
 		<Topbar/>
-		<Categories/>
-		<Recommended/>
+		<div className='mt-12'>
+		<Outlet/>
+		</div>
 	</div>
   )
 }

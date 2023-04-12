@@ -5,10 +5,41 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { Provider } from "react-redux";
 import store from './store/index';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import ErrorPage from './errorpage';
+import PodcastDetail from "./components/Podcasts/PodcastDetail";
+import Framer from "./components/Framer";
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage/>,
+    children: [
+      {
+        path: "",
+        element: <Framer/>
+      },
+      {
+        path: "shows/:showsID",
+        element: <PodcastDetail/>
+      }
+    ]
+  }
+
+
+]) 
+
 ReactDOM.render(
   <React.StrictMode>
+  
     <Provider store={store}>
-      <App />
+      <RouterProvider router={router}/>
+  
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

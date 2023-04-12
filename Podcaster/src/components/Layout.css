@@ -1,12 +1,6 @@
 .layout {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  display: grid;
+  grid-template-columns: 300px 1fr; /* 200px for the sidebar, 1fr for the other section */
+ /* the height of the container will be the full height of the viewport */
 }
-.total-price {
-  text-align: right;
-  margin-right: 50px;
-  margin-bottom: 20px;
-  margin-top: 1rem;
-  font-size: 20px;
-}
+

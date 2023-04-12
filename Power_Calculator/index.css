@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+}
+
+header{
+	text-align: center;
+	/* margin: 0 auto; */
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	width: calc(80% - 3em);
+	margin: 1em auto;
+	gap: 2em;
+	grid-template-rows: 200px 200px;
+
+}
+
+.box{
+	background-color: bisque;
+	border-radius: 5px;
+}
