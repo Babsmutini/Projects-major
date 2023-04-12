@@ -1,15 +1,13 @@
 import React from 'react'
 import Search from './Search';
-import {AiOutlineSetting} from 'react-icons/ai'
-import {VscAccount} from 'react-icons/vsc'
+import Profile from './Profile';
+import Navigation from './Navigation';
 const index = () => {
   return (
-	<div className='flex justify-between py-1 '>
+	<div className='flex justify-between items-center py-1 gap-x-4'>
+		<Navigation/>
 		<Search/>
-		<div className='flex gap-4 text-[1.8em] text-white pt-2'>
-			<VscAccount/>
-			<AiOutlineSetting/>
-		</div>
+		<Profile/>
 	</div>
   )
 }
