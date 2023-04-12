@@ -6,7 +6,7 @@ import { Outlet } from 'react-router';
 
 const Frame = () => {
   return (
-	<div className='flex flex-col p-8 bg-[#08072A] w-full  overflow-x-hidden '>
+	<div className='flex flex-col p-8 bg-[#fff] w-full  overflow-x-hidden '>
 		<Topbar/>
 		<div className='mt-12'>
 		<Outlet/>
