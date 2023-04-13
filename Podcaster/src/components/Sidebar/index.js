@@ -11,7 +11,7 @@ const Sidebar = () => {
     return (
         <>
             <div className=" bg-[#F2F1F5] h-screen sticky top-0 flex flex-col ">
-                <div className="flex gap-3 text-[2em] text-bold py-6 items-center pl-8 ">
+                <div className="flex gap-3 text-[2em] text-bold py-6 items-center pl-4 ">
                     <SiMusicbrainz /> Podcaster
                     {/* <GiLightningFrequency color="#8878B8"/> Podcaster */}
                 </div>
